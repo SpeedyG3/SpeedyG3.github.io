@@ -1,0 +1,111 @@
+/*  * {
+     color: pink;
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+button {
+    background-color: #a8dadc; 
+    font-size: 20px;
+}
+
+h1, h2 {
+    color: #1d3557;
+}
+
+#signup {
+    background-color: #669bc6;
+    color: #f1faee
+}
+
+span {
+    color: #457b9d;
+}
+
+.tag {
+    background-color: rgb(243, 9, 9);
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* .exit {
+    color: pink;
+} */
+
+.post a {
+    color: #457b9d;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+/* input + button {
+    background-color: pink;
+} */
+
+
+/* adjacent descendant */
+h2 + button {
+    font-size: 35px;
+    /* background-color: magenta; */
+}
+
+/* direct descendant */
+footer>a {
+    color: teal;
+}
+
+input[type="password"]{
+    color: green;
+}
+/* 
+section.post{
+    background-color: orange;
+} */
+
+a[href*="google"]{
+    color: black;
+}
+
+
+.post a:hover{
+    text-decoration: underline rebeccapurple;
+}
+
+.post button:active{
+    background-color:#02c39a;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #88e26f;
+}
+/* 
+.post h2::first-letter{
+    color: pink;
+} */
+
+p::first-line{
+    color:green;
+}
+
+::selection{
+    background-color: yellow;
+}
+
+h1,h2{
+    color: black;
+}
+
+button:hover{
+    background-color: #1d3557;
+}
+/* FOR SPECIFICITY: id > class > elemnent (we can consider pseduo classes as classes and pseudo elements as elements) */
+/* this one has more specificity that the above one because it has a class specifier */
+.post button:hover {      
+    background-color: #e63946;
+    color: #a8dadc;
+}
